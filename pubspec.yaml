@@ -1,0 +1,19 @@
+name: spendwise_ai
+description: Theo dõi chi tiêu offline với ML Kit OCR, Regex và SQLite.
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  fl_chart: ^0.69.0
+  image_picker: ^1.1.2
+  google_mlkit_text_recognition: ^0.13.1
+
+flutter:
+  uses-material-design: true

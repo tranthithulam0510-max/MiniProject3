@@ -1,0 +1,33 @@
+Running Gradle task 'assembleRelease'...                        
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/HP/.gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+ERROR: Missing classes detected while running R8. Please add the missing classes or apply additional keep rules that are generated in D:\Nentang\spendwise_ai\build\app\outputs\mapping\release\missing_rules.txt.
+ERROR: R8: Missing class com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions$Builder (referenced from: com.google.mlkit.vision.text.TextRecognizer com.google_mlkit_text_recognition.TextRecognizer.initialize(io.flutter.plugin.common.MethodCall))
+Missing class com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions (referenced from: com.google.mlkit.vision.text.TextRecognizer com.google_mlkit_text_recognition.TextRecognizer.initialize(io.flutter.plugin.common.MethodCall))
+Missing class com.google.mlkit.vision.text.devanagari.DevanagariTextRecognizerOptions$Builder (referenced from: com.google.mlkit.vision.text.TextRecognizer com.google_mlkit_text_recognition.TextRecognizer.initialize(io.flutter.plugin.common.MethodCall))
+Missing class com.google.mlkit.vision.text.devanagari.DevanagariTextRecognizerOptions (referenced from: com.google.mlkit.vision.text.TextRecognizer com.google_mlkit_text_recognition.TextRecognizer.initialize(io.flutter.plugin.common.MethodCall))
+Missing class com.google.mlkit.vision.text.japanese.JapaneseTextRecognizerOptions$Builder (referenced from: com.google.mlkit.vision.text.TextRecognizer com.google_mlkit_text_recognition.TextRecognizer.initialize(io.flutter.plugin.common.MethodCall))
+Missing class com.google.mlkit.vision.text.japanese.JapaneseTextRecognizerOptions (referenced from: com.google.mlkit.vision.text.TextRecognizer com.google_mlkit_text_recognition.TextRecognizer.initialize(io.flutter.plugin.common.MethodCall))
+Missing class com.google.mlkit.vision.text.korean.KoreanTextRecognizerOptions$Builder (referenced from: com.google.mlkit.vision.text.TextRecognizer com.google_mlkit_text_recognition.TextRecognizer.initialize(io.flutter.plugin.common.MethodCall))
+Missing class com.google.mlkit.vision.text.korean.KoreanTextRecognizerOptions (referenced from: com.google.mlkit.vision.text.TextRecognizer com.google_mlkit_text_recognition.TextRecognizer.initialize(io.flutter.plugin.common.MethodCall))
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:minifyReleaseWithR8'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.R8Task$R8Runnable
+   > Compilation failed to complete
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 3s
+Running Gradle task 'assembleRelease'...                           64.7s
+Gradle task assembleRelease failed with exit code 1
